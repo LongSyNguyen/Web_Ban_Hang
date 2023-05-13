@@ -1,0 +1,20 @@
+.contain{
+    margin-top: 100px;
+    margin-left: 20%;
+}
+.contain table thead tr th {
+    border-bottom: 1px solid black;
+}
+tbody tr td {
+    text-align: center;
+}
+.contain table tbody tr td{ 
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+}
+tbody tr:hover{
+    background-color:#333;
+}
+tr td a:hover{
+    background-color:#ffff;
+}

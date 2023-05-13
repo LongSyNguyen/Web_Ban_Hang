@@ -1,0 +1,25 @@
+.add-product{
+    display: table;
+    border: 1px solid greenyellow;
+}
+div.product{
+    margin-left: 30%;
+    margin-top: 100px;
+    display: flex;
+}
+.show-product{
+    position: absolute;
+    padding: 0;
+    display: table;
+    margin-left: 50%;
+    height: 70px;
+    border: 1px solid #ccc;
+}
+.show-product td {
+    background-color: #f0e7da;
+    padding: 5px;
+}
+.show-product th {
+    background-color: #cad8fa;
+    padding: 5px;
+}

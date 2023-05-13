@@ -1,0 +1,41 @@
+body {
+	font-family: sans-serif;
+  background-color: lightgoldenrodyellow;
+}
+  
+.btn btn-info {
+    color: rgb(225, 16, 16);
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+  table, th, td {
+    border: 1px solid;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 450px; 
+    margin-right: auto;
+  }
+  th {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+  }
+  h3 {
+    color: rgb(225, 16, 16);
+    text-align: center;
+  }
+  .panel-heading {
+    width: 100px;
+    margin-bottom: 345px;
+    margin-left: 768px;    
+  }
+  input[type=text] {
+    width: 20%;
+  }
+  
+tr:hover {background-color: rgb(188, 233, 9);}
+  

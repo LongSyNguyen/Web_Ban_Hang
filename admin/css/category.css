@@ -1,0 +1,8 @@
+div.category div.body_cate{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.insert-cate{
+    margin-right: 300px;
+}

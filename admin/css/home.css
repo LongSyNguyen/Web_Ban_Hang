@@ -1,0 +1,16 @@
+.circle{
+    background-color: aqua;
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    margin-right: 100px;
+}
+.circle p{
+    text-align: center;
+    padding-top: 80px;
+}
+.content{
+    margin: 100px;
+    display: flex;
+}

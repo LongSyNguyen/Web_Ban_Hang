@@ -1,0 +1,35 @@
+body {
+	font-family: sans-serif;
+  background-color: lightgoldenrodyellow;
+}
+.form-group{
+    text-align: center;
+    margin-top: 10px;
+    
+    margin-right: auto;
+  }
+table, th, td {
+    border: 1px solid;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 450px; 
+    margin-right: auto;
+  }
+  th {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+  }
+  input[type=text] {
+    width: 40%;
+    height: 30px;
+  }
+  h1{
+    color: rgb(18, 22, 233);
+  }
+  
+  h3{
+    color: rgb(239, 7, 7);
+  }
+  tr:hover {background-color: rgb(188, 233, 9);}
+  

@@ -1,0 +1,48 @@
+table.show-product{
+    padding-top: 100px;
+    padding-left: 30%;
+    border: 0px;
+}
+img.image{
+    width: 50px;
+    height: 50px;
+}
+
+tbody{
+    border: 1px solid wheat;
+}
+td button{
+    background-color: aqua;
+    text-decoration: none;
+    border: 1px solid black;
+}
+td button:hover{
+    background-color: yellow;
+}
+/* CSS phân trang */
+/* thiết lập style cho thẻ a */
+.Pagin{
+    margin-top:10%;
+    margin-left:200px;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+ /* thiết lập style cho class active */
+  .pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+ /* thêm màu nền khi người dùng hover vào class không active */
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+  }
+/* CSS tim kiếm */
+.form-search{
+    margin-left: 70%;
+    margin-top: 50px;
+}

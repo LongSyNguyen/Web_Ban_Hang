@@ -1,0 +1,22 @@
+body {
+	font-family: sans-serif;
+  background-color: lightgoldenrodyellow;
+}
+table, th, td {
+    border: 1px solid;
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 420px; 
+    margin-right: auto;
+  }
+  th {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+  }
+  h1 {
+    color: rgb(58, 16, 225);
+    margin-left: 795px;
+  }
+  tr:hover {background-color: rgb(188, 233, 9);}
+  
