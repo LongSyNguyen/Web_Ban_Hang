@@ -1,22 +1,111 @@
-body {
-	font-family: sans-serif;
-  background-color: lightgoldenrodyellow;
+/* Reset some default styles */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
 }
-table, th, td {
-    border: 1px solid;
-    text-align: center;
-    margin-top: 70px;
-    margin-left: 420px; 
-    margin-right: auto;
+
+/* Container styling */
+.container {
+  margin-top: 20px;
+}
+
+/* Panel styling */
+.panel {
+  margin-top: 20px;
+}
+
+/* Table styling */
+.table {
+  margin-bottom: 0;
+}
+
+.table th,
+.table td {
+  text-align: center;
+}
+
+/* Image styling */
+.table img {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 5px;
+}
+
+/* Quantity input styling */
+.table input[name="quantity"] {
+  width: 40px;
+  text-align: center;
+}
+
+/* Update button styling */
+.table button {
+  padding: 8px 16px;
+  background-color: #5bc0de;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Delete button styling */
+.table .bth-danger {
+  color: #fff;
+  background-color: #d9534f;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+/* Total price styling */
+.table .bg-info {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #5bc0de;
+  color: #fff;
+}
+
+/* Checkout button styling */
+.panel-title a.btn-info {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #5bc0de;
+  padding: 12px 24px;
+  border-radius: 5px;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+  .container {
+      padding: 10px;
   }
-  th {
-    width: 100px;
-    height: 40px;
-    text-align: center;
+
+  .table th,
+  .table td {
+      font-size: 14px;
   }
-  h1 {
-    color: rgb(58, 16, 225);
-    margin-left: 795px;
+
+  .table img {
+      max-width: 80px;
+      max-height: 80px;
   }
-  tr:hover {background-color: rgb(188, 233, 9);}
-  
+
+  .table input[name="quantity"] {
+      width: 30px;
+  }
+
+  .table button {
+      padding: 6px 12px;
+  }
+
+  .table .bg-info {
+      font-size: 16px;
+      padding: 10px;
+  }
+
+  .panel-title a.btn-info {
+      font-size: 18px;
+      padding: 10px 20px;
+  }
+}

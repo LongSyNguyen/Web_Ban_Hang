@@ -31,8 +31,6 @@
                             <th>Ghi chú</th>
                             <th>Ngày đặt hàng</th>
                             <th>Trạng thái</th>
-                            <th>Đánh giá</th>
-                            
                         </tr>
                     </thead>
                     <?php foreach ($customer as $key => $value) { ?>
@@ -61,14 +59,10 @@
                                 <span>Hoàn đơn hàng</span>
                             <?php } ?>
                             </td>
-                            <td>
-                            <?php if ($value['status'] == 4) { ?>
-                                <a href="feedback.php?id=<?php echo $value['id']  ?>">Đánh giá</a>
-                            <?php }?>
-                            </td>
                         </tr>
                     </tbody>      
-                    <?php }} else {
+                    <?php }
+                    } else {
         unset($_SESSION['user_id']);
     }?>    
                 </table>      

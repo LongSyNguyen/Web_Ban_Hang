@@ -38,7 +38,7 @@
 	include('connDB.php');
     if(isset($_POST['submit'])){
 		$email = $_POST['email'];
-		$pwd = substr(md5(md5($_POST['pwd'])),5,10);
+		$pwd = $_POST['pwd'];
 		$sql = "SELECT  user.*, role.name FROM User, Role WHERE email = '$email' AND password = '$pwd' AND User.Role_id = Role.id";
 		$result = mysqli_query($conn,$sql);
         if(mysqli_num_rows($result) > 0){

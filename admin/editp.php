@@ -73,10 +73,6 @@
     $sql = "UPDATE Product SET title = '$title', price = '$price', size = '$size', color = '$color', 
     quantity = '$quantity', category_id = '$category_id', thumbnail = '$file_name', description = '$description', updated_at = '$updated_at' WHERE id=$id";
     $result = mysqli_query($conn, $sql);
-    // Khi mỗi lần  truy vấn thành công thì nó trả về id của bản ghi đó
-    // $product_id = mysqli_insert_id($conn);
-    // var_dump($id_product);
-    // die();
     if($result){
         header('location: showp.php');
     }}

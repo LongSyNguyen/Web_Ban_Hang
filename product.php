@@ -19,7 +19,7 @@ if(isset($_GET['id'])){
               <div>Còn lại:<?php $total = $row['quantity'] - $thongke['sl']; echo $total?></div>
               màu : <?php echo $row['color'] ?><br>
               ➤<?php echo $row["description"] ?><br>
-              <a href='cart.php?id=<?php echo $id ?>'><button class=buy type='button' name='button'>Buy it now 🛒</button></a><br>
+              <a href='cart.php?id=<?php echo $id ?>'><button class=buy type='button' name='button'>Buy it now 🛒</button></a><br> //lay id cua san pham truyen sang ben cart.php
             </div>
        
                 <?php } 

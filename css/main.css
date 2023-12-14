@@ -38,7 +38,7 @@ nav{
     display: block;
     text-decoration: none;
     width: auto;
-    height: 20px;
+    /* height: 20px; */
     padding: 18px 20px;
     /* top: 50%;
     transform: translateY(50%); */
@@ -51,6 +51,7 @@ nav{
     padding: 0px;
     border: 1px solid #434343;
     display: none;
+    z-index: -1;
 }
 .main-menu ul.sub-menu a{
     padding: 8px 15px;
@@ -62,6 +63,7 @@ nav{
 }
 .main-menu li:hover ul.sub-menu{
     display: block;
+    z-index: 1;
 }
 /* Thiết lâp boder khi hover */
 .main-menu>li>a{

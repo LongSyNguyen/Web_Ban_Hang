@@ -1,7 +1,6 @@
 <?php 
     include('connDB.php');
-    $category = mysqli_query($conn,"SELECT * FROM category WHERE name NOT IN ('News') ");
-    $news = mysqli_query($conn,"SELECT * FROM category WHERE name='News'");
+    $category = mysqli_query($conn,"SELECT * FROM category");
     ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,8 +29,6 @@
                                 <?php } ?>
                             </ul>
                         </li>
-                        <li><a href="news.php"><?php foreach($news as $key => $value){echo $value['name'];}?></a></li>
-                        <li><a href="">Tra Cứu BH</a></li>
                         <li>
                             <a href="view-cart.php">Giỏ Hàng</a>
                             <ul class="sub-menu">

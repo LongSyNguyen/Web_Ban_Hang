@@ -58,7 +58,7 @@
                             <tbody>
                                 <?php $total_price = 0; ?>                       
                                 <?php foreach ($cart as $key => $value):
-                                    $total_price += ($value['price'] * $value['quantity'])
+                                    $total_price = $total_price + ($value['price'] * $value['quantity'])
                                 ?>
                                     <tr>   
                                         <td><img src="img/<?php echo $value['thumbnail']?> "alt="" width="100px" ></td>

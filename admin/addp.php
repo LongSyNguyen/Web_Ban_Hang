@@ -1,6 +1,6 @@
 <?php
     include('header.php');
-    $category = mysqli_query($conn,"SELECT * FROM category WHERE name NOT IN ('News') ");
+    $category = mysqli_query($conn,"SELECT * FROM category");
 ?>
 <!-- Thêm Sản Phẩm -->
 <?php

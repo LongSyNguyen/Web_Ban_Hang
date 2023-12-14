@@ -46,19 +46,22 @@ if(!isset($_SESSION['pwd'])){
 </form>
 </div>
 <script>
-	function check(){
-        var email = document.formReg.email.value;
-        var fullname = document.formReg.fullname.value;
-        var oldpassword = document.formReg.oldpwd.value;
-        var newpassword = document.formReg.newpwd.value;
-        var pNumber = document.formReg.phone_number.value;
-        var address = document.formReg.address.value;
-		if(email ==""||fullname ==""||pNumber==""||address==""||newpassword==""){
-			alert("Không được bỏ trống");
-			return false;
-		} 
-	}
+    function check() {
+        var email = document.formReg.email.value.trim();
+        var fullname = document.formReg.fullname.value.trim();
+        var newpwd = document.formReg.newpwd.value.trim();
+        var pNumber = document.formReg.phone_number.value.trim();
+        var address = document.formReg.address.value.trim();
+
+        if (email === "" || fullname === "" || pNumber === "" || address === "" || newpwd === "") {
+            alert("Không được bỏ trống");
+            return false;
+        } 
+
+        return true;
+    }
 </script>
+
 <?php
 if (isset($_POST['submit'])) {
     $fullname = $_POST['fullname'];

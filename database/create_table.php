@@ -60,15 +60,6 @@
 	echo "có lỗi xảy ra".mysqli_error($conn);
 	}
 
-	//BẢNG FEEDBACK 
-
-	$sql = "CREATE TABLE IF NOT EXISTS Feedback(id int PRIMARY KEY auto_increment, product_id int NOT NULL,
-										subject_name varchar(100) NOT NULL, note varchar(500) NOT NULL, user_id int NOT NULL)";
-	if(mysqli_query($conn,$sql)){
-	echo "<br> kết nối thành công";
-	}else{
-	echo "có lỗi xảy ra".mysqli_error($conn);
-	}
 
 	//BẢNG ORDER
 
@@ -91,22 +82,4 @@
 	echo "có lỗi xảy ra".mysqli_error($conn);
 	}
 
-	//BẢNG TIN TỨC
-	$sql = "CREATE TABLE IF NOT EXISTS News(id int PRIMARY KEY auto_increment, title varchar(300) NOT NULL, image varchar(100) NOT NULL, 
-											short_infor varchar(1000) NOT NULL, long_infor longtext NOT NULL, 
-											created_at DATE NOT NULL, updated_at DATE NOT NULL )";
-	if(mysqli_query($conn,$sql)){
-	echo "<br> kết nối thành công";
-	}else{
-	echo "có lỗi xảy ra".mysqli_error($conn);
-	}
-
-	//BẢNG ẢNH TIN TỨC
-
-	$sql = "CREATE TABLE IF NOT EXISTS newsgallery(id int PRIMARY KEY auto_increment, news_id INT NOT NULL, image varchar(100) NOT NULL)";
-	if(mysqli_query($conn,$sql)){
-	echo "<br> kết nối thành công";
-	}else{
-	echo "có lỗi xảy ra".mysqli_error($conn);
-	}
 ?>

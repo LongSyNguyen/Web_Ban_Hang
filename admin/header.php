@@ -46,12 +46,6 @@ if(!isset($_SESSION['admin'])){
                                 <li><a href="orderBrowse.php">Đơn hàng được duyệt</a></li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="shown.php">Quản Lý Tin Tức</a>
-                            <ul class="sub-menu">
-                                <li><a href="addNews.php">Thêm Tin Tức</a></li>
-                            </ul>
-                        </li>
                         <?php
                             if(isset($_SESSION['admin'])){
                                 echo "<li><a href='../unset.php'>Đăng Xuất</a></li>" ;

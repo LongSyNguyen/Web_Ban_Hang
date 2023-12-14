@@ -1,0 +1,113 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+.carousel {
+    margin-top: 20px;
+    position: relative;
+    width: 700px;
+    height: 300px;
+    margin-left: calc(100%/4);
+    margin-bottom: 20px;
+}
+/* Container styling */
+.list-product {
+    margin-left: calc(100%/7);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 1100px;
+}
+
+/* Individual product styling */
+.product {
+    flex: 0 1 calc(25% - 20px); /* 25% width with margin */
+    max-width: 200px;
+    max-height: 250px;
+    text-align: center;
+    
+    padding: 10px;
+    border: 1px solid #ebecec;
+    border-radius: 8px;
+    margin: 10px; /* Added margin to separate products */
+    box-sizing: border-box;
+}
+
+.product img {
+    max-width: 100%;
+    max-height: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product a {
+    text-decoration: none;
+    color: #333;
+}
+
+.product a:hover {
+    color: #007bff;
+}
+
+.price {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/* Ensure equal height for products */
+.list-product::after {
+    content: "";
+    flex: auto;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 200px; /* Adjust based on the height of your bottom section */
+}
+
+.bottom-section {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px; /* Height of the footer */
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.pagination a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid #007bff;
+    margin: 0 4px;
+    border-radius: 4px;
+}
+
+.pagination a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.pagination .active {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+}
+
+.contact-info {
+    text-align: center;
+    margin: 2em 0;
+    padding: 1em;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    /* Other styles... */
+}

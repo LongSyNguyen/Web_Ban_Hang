@@ -10,7 +10,7 @@ include('header.php');
 	}else{
 		$p = 1;
 	}
-	$ppage = 3;
+	$ppage = 4;
 	$start = $ppage*($p-1);
 	$paging = "LIMIT $start, $ppage";
 	$where = "WHERE id = '$q' OR title LIKE '%$q%'";
@@ -40,7 +40,7 @@ if ($result->num_rows > 0) {
                 <th>Dung Lượng</th>
                 <th>Ảnh Sản Phẩm</th>
                 <th>Số lượng</th>
-                <th></th>
+                <th>Thao tác</th>
             </tr>";
     foreach ($result as $key => $value) { ?>
                     <tr>
